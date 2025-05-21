@@ -1,0 +1,12 @@
+name: MOSAIC_Calc_apps
+title: MOSAIC_Calc_apps
+username: dtkaplan
+account: dtkaplan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14700300
+bundleId: 10320347
+url: https://dtkaplan.shinyapps.io/MOSAIC_Calc_apps/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -69,7 +69,7 @@ output$eig_flowplot <- renderPlot({
 
   P %>%
     gf_path(y ~ x, data = eig_traj(), inherit = FALSE, color="tomato",
-            alpha = ~ alpha, size = ~ size) %>%
+            alpha = ~ alpha, linewidth = ~ size) %>%
     gf_abline(intercept=0,
               slope = tan(eig_traj_ang_start()),
               color="green") %>%

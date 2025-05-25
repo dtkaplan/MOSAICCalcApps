@@ -41,6 +41,11 @@ server <- function(input, output, session) {
 
   source("server-sources/linear_flow.R", local = TRUE)
 
+  source("server-sources/flow-1d.R", local = TRUE)
+
+  source("server-sources/sinusoids.R", local = TRUE)
+
+  source("server-sources/latex.R", local = TRUE)
 
   # # # source("server-sources/ansatze.R", local = TRUE)
 }

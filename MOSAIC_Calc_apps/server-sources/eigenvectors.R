@@ -116,9 +116,6 @@ eigen_the_matrix <- reactive({
 eigen_stuff <- reactive({
   eigen(eigen_the_matrix())
 })
-output$eigen_val1 <- renderText({
-  round(eigen_stuff()$values[1], 2)
-})
-output$eigen_val2 <- renderText({
-  round(eigen_stuff()$values[2], 2)
+output$eigen_vals <- renderText({
+ paste("𝞴", c("₁" , "₂"), "=", round(eigen_stuff()$values, 2), collapse = "     ")
 })

@@ -16,13 +16,19 @@ source("ui-sources/dchain_ui.R")
 source("ui-sources/eigenvectors_ui.R")
 source("ui-sources/matrix_iteration_ui.R")
 source("ui-sources/linear_flow_ui.R")
-
+source("ui-sources/flow_1d_ui.R")
+source("ui-sources/sinusoids_ui.R")
+source("ui-sources/latex_ui.R")
 
 
 navbarPage("MOSAIC Calc Apps",
   navbarMenu("About",
     do.call(nav_panel, c(list(title = "Welcome"), about_ui()))
     ),
+  navbarMenu("Functions",
+    do.call(nav_panel, c(list(title = "Sinusoids"), sinusoids_ui())),
+    do.call(nav_panel, c(list(title = "Interpolation"), interpolation_explorer_ui()))
+  ),
   navbarMenu("D and antiD",
     do.call(nav_panel, c(list(title = "f() and F()"), graph_antiD_ui())),
     do.call(nav_panel, c(list(title = "Average & marginal"), am_ui())),
@@ -38,6 +44,7 @@ navbarPage("MOSAIC Calc Apps",
     do.call(nav_panel, c(list("Euler accumulation"), DE_euler_ui()))
   ),
   navbarMenu("Dynamics",
+    do.call(nav_panel, c(list(title = "Flow 1-D"), flow_1d_ui())),
     do.call(nav_panel, c(list(title = "Grazing Cows"), cows_ui())),
     do.call(nav_panel, c(list("Balance in logistic growth"), logistic_balance_ui())),
     do.call(nav_panel, c(list("Eigenflows"), eigenflows_ui())),
@@ -49,6 +56,7 @@ navbarPage("MOSAIC Calc Apps",
   ),
   navbarMenu("Misc.",
     do.call(nav_panel, c(list(title = "NACA Airfoil"), airfoil_ui())),
+    do.call(nav_panel, c(list(title = "LaTeX"), latex_ui()))
   ),
 
 )

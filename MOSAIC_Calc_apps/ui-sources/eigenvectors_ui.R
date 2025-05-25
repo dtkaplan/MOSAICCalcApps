@@ -11,10 +11,7 @@ eigenvectors_ui <- function() {
           card(card_header(mat_val("eigen_b", "B")),  mat_val("eigen_d", "D"))
         ),
         card(card_header("Eigenvalues:"),
-             layout_columns(
-               textOutput("eigen_val1"),
-               textOutput("eigen_val2")
-             )
+               textOutput("eigen_vals")
         ),
         card(card_header(checkboxInput("eigen_zoom", "Zoom in", value=FALSE)),
              sliderInput("eigen_spread", "Angle spread",

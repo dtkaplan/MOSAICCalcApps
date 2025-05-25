@@ -5,7 +5,7 @@ account: dtkaplan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 14700300
-bundleId: 10320347
+bundleId: 10340717
 url: https://dtkaplan.shinyapps.io/MOSAIC_Calc_apps/
 version: 1
 asMultiple: FALSE
